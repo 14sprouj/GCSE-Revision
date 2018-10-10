@@ -1,0 +1,82 @@
+sitetitle {
+	font-weight:bold;
+	color:red;
+	text-decoration:underline;
+	font-size:32pt;
+	text-align:center;
+}
+
+subtitle {
+	display:block;
+	color:#0066cc;
+	font-weight:bold;
+}
+
+
+/* SUBJECT BACKGROUNDS */
+.light-grey {
+	background-color:#ececec;
+	padding:7pt;
+}
+
+table.subjectslist {
+	width:100%;
+	border:none;
+}
+
+a.hidden {
+	text-decoration:none;
+	color:inherit;
+}
+
+.option {
+	font-size:20pt;
+}
+
+.Biology {
+	background-color:#55ff55;
+	color: black;
+	padding:2pt;
+	margin:2pt;
+	width:99%;
+}
+
+.Biology:hover {
+	background-color:#00ff00;
+	color: black;
+	padding:3pt;
+	margin:1pt;
+	text-decoration:underline;
+}
+
+.Chemistry {
+	background-color:#ff5555;
+	color: white;
+	padding:2pt;
+	margin:2pt;
+	width:99%;
+}
+
+.Chemistry:hover {
+	background-color:#ff0000;
+	color: white;
+	padding:3pt;
+	margin:1pt;
+	text-decoration:underline;
+}
+
+.Physics {
+	background-color:#5555ff;
+	color: white;
+	padding:2pt;
+	margin:2pt;
+	width:99%;
+}
+
+.Physics:hover {
+	background-color:#0000ff;
+	color: white;
+	padding:3pt;
+	margin:1pt;
+	text-decoration:underline;
+}
