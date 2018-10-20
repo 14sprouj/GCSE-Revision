@@ -1,0 +1,64 @@
+<html>
+<!-- This page will only be displayed if user is logged in -->
+<head>
+<title>Physics Revision | GCSE Revision</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body onload="load()">
+<sitetitle>GSCE Revision</sitetitle>
+<p></p>
+<hr>
+<div class="light-grey">
+
+<div id="q1">
+div 1
+</div>
+<div id="q2">
+div 2
+</div>
+<div id="q3">
+div 3
+</div>
+
+</div>
+
+<object 
+  classid="clsid:CAFEEFAC-0015-0000-0000-ABCDEFFEDCBA"
+  style="height: 500px; width: 700px;">
+  <param name="code" value="FinalProject.class">
+    <comment>
+      <embed code="FinalProject.class"
+        type="application/x-java-applet"
+        height="500" width="700">
+        <noembed>
+          This browser appears to lack support for Java Applets.
+        </noembed>
+      </embed>
+    </comment>
+  </object>
+</body>
+<script>
+
+function load(){
+randomNumber = Math.floor(Math.random() * 3) + 1   //numbers 1 - 3
+     if (randomNumber == 1) {
+          document.getElementById("q1").style.display = "inline";
+          document.getElementById("q2").style.display = "none";
+          document.getElementById("q3").style.display = "none";
+     }
+     if (randomNumber == 2) {
+          document.getElementById("q1").style.display = "none";
+          document.getElementById("q2").style.display = "inline";
+          document.getElementById("q3").style.display = "none";
+     }
+     if (randomNumber == 3) {
+          document.getElementById("q1").style.display = "none";
+          document.getElementById("q2").style.display = "none";
+          document.getElementById("q3").style.display = "inline";
+
+     }
+     
+}
+</script>
+</html>

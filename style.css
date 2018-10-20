@@ -1,0 +1,122 @@
+sitetitle {
+	font-weight:bold;
+	color:red;
+	text-decoration:underline;
+	font-size:32pt;
+	text-align:center;
+}
+
+subtitle {
+	display:block;
+	color:#0066cc;
+	font-weight:bold;
+	font-size:15pt;
+}
+
+
+/* SUBJECT BACKGROUNDS */
+.light-grey {
+	background-color:#ececec;
+	padding:7pt;
+}
+
+td, table.subjectslist {
+	width:100%;
+	border-color:#ececec;
+	border-width:thick;
+	table-layout:fixed;
+}
+
+a.hidden {
+	text-decoration:none;
+	color:inherit;
+}
+
+.option {
+	font-size:55pt;
+	padding:3pt;
+}
+
+.English {
+	background-color:#6666ff;
+	color: white;
+	width:99%;
+}
+
+.English:hover {
+	background-color:#0000ff;
+	color: white;
+	text-decoration:underline;
+}
+
+.Maths {
+	background-color:#ffff66;
+	color: black;
+	width:99%;
+}
+
+.Maths:hover {
+	background-color:#ffff00;
+	color: black;
+	text-decoration:underline;
+}
+
+.Science {
+	background-color:#66ff66;
+	color: black;
+	width:99%;
+}
+
+.Science:hover {
+	background-color:#00ff00;
+	color: black;
+	text-decoration:underline;
+}
+
+.Religion {
+	background-color:#cc55cc;
+	color: white;
+	width:99%;
+}
+
+.Religion:hover {
+	background-color:#b300b3;
+	color: white;
+	text-decoration:underline;
+}
+
+.IT {
+	background-color:#ff944d;
+	color: white;
+	width:99%;
+}
+
+.IT:hover {
+	background-color:#ff6600;
+	color: white;
+	text-decoration:underline;
+}
+
+.MS {
+	background-color:#ff80bf;
+	color: white;
+	width:99%;
+}
+
+.MS:hover {
+	background-color:#ff3399;
+	color: white;
+	text-decoration:underline;
+}
+
+.BS {
+	background-color:#ff8c66;
+	color: black;
+	width:99%;
+}
+
+.BS:hover {
+	background-color:#cc3300;
+	color: white;
+	text-decoration:underline;
+}

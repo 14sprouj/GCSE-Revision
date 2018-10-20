@@ -1,7 +1,148 @@
 <html>
-	<head>
-		<title>GCSE REVISION</title>
-	</head>
-	<body>
-		
+<head>
+<title>GCSE REVISION</title>
+</head>
+<body onload="loaded()">
+<form id="SubjectsList">
+<input type="checkbox" value="EngLang"> English Language<br>
+<input type="checkbox" value="EngLit"> English Literature<br>
+<input type="submit" onclick="submit()">
+</form>
+
+<div id="chosen">
+You have chosen the following subjects:
+<ul>
+<div id="EngLangText"><li>English Language</li></div>
+<div id="EngLitText"><li>English Literature</li></div>
+<div id="MathsText"><li>Maths</li></div>
+</ul>
+
+
+
+
+<p>You have chosen the following subjects:</p>
+English Language: <input type="checkbox" id="LangBox" onclick="myFunction()">
+
+<p id="LangText" style="display:none">Checkbox is CHECKED!</p>
+</div>
+<script>
+
+function myFunction() {
+  // Get the checkbox
+  var checkBox = document.getElementById("LangBox");
+  // Get the output text
+  var LangText = document.getElementById("LangText");
+
+  // If the checkbox is checked, display the output text
+  if (LangBox.checked == true){
+    LangText.style.display = "block";
+  } else {
+    LangText.style.display = "none";
+  }
+}
+
+function loaded() {
+var langBox = document.getElementById("EngLang");
+var langText = document.getElementById("EngLangText");
+var litBox = document.getElementById("EngLit");
+var subjects = document.getElementById("SubjectsList");
+ if (langBox.checked == true){
+    langText.style.display = "block";
+  } else {
+    langText.style.display = "none";
+  }
+subjects.style.display = none;
+}
+</script>
+
+</body>
+
+<!--
+% #------------------------------------------------------------------------------- 
+# Name:        GCSE Revision Quiz
+# Purpose:     To be a revision source for all GCSE subjects
+#
+# Author:      Sprouse; Joel Sprouse
+#
+# Created:     04/06/2018
+# Modified:    04/06/2018
+# Copyright:   (c) Sprouse 2018
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+##Imports##
+import random
+from tkinter import *
+
+##Subject Commands##
+def EngLang():
+    subjectsList.append("Eng Lang")
+def EngLit():
+    subjectsList.append("Eng Lit")
+def Maths():
+    subjectsList.append("Maths")
+def Biology():
+    subjectsList.append("Biology")
+def Chemistry():
+    subjectsList.append("Chemistry")
+def Physics():
+    subjectsList.append("Physics")
+def IT():
+    subjectsList.append("ICT")
+def BS():
+    subjectsList.append("Business")
+def MS():
+    subjectsList.append("Media")
+def RE():
+    subjectsList.append("Religious Education")
+
+##Subject Questions Lists##
+EngLangQs = [""]
+EngLitQs = [""]
+MathsQs = [""]
+BiologyQs = ["What is the role of the nucleus?"]
+
+##Program##
+root = Tk()
+hi = Label(root, text="""Welcome to GCSE Revision Quiz
+""")
+hi.pack()
+
+#root.mainloop()
+
+v=IntVar()
+subjectsList =['']
+EngLangQuery = Checkbutton(root, text="English Language", command=EngLang) 
+EngLangQuery.pack()
+EngLitQuery = Checkbutton(root, text="English Literature", command=EngLit)
+EngLitQuery.pack()
+MathsQuery = Checkbutton(root, text="Maths", command=Maths)
+MathsQuery.pack()
+BiologyQuery = Checkbutton(root, text="Biology", command=Biology)
+BiologyQuery.pack()
+ChemistryQuery = Checkbutton(root, text="Chemistry", command=Chemistry)
+ChemistryQuery.pack()
+PhysicsQuery = Checkbutton(root, text="Physics", command=Physics)
+PhysicsQuery.pack()
+ITQuery = Checkbutton(root, text="ICT/Computer Science", command=IT)
+ITQuery.pack()
+MSQuery = Checkbutton(root, text="Media Studies", command=MS)
+MSQuery.pack()
+BSQuery = Checkbutton(root, text="Business Studies", command=BS)
+BSQuery.pack()
+REQuery = Checkbutton(root, text="Religious Education", command=RE)
+REQuery.pack()
+button=Button(root, text="Done", command=root.destroy)
+button.pack()
+root.mainloop()
+
+subjectsList = str(subjectsList)
+print(subjectsList + " have been selected")
+
+
+# For testing purposes
+if "Biology" in subjectsList:
+   BioQ1 = label(text=random.choice(BiologyQs))
+   BioQ1.pack()
+   root.mainloop() %
+   -->
 </html>
