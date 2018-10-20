@@ -4,6 +4,7 @@ sitetitle {
 	text-decoration:underline;
 	font-size:32pt;
 	text-align:center;
+	display:block;
 }
 
 subtitle {
@@ -29,8 +30,35 @@ a.hidden {
 	color:inherit;
 }
 
+a.blue-link {
+	text-decoration:none;
+	color:inherit;
+}
+
+a.blue-link:hover {
+	color:blue;
+	text-decoration:underline;
+}
+
+.question {
+	text-align:center;
+	border:2px solid grey;
+	border-radius:4px;
+	margin:5px;
+}
+
+.answer {
+	text-align:center;
+	border:2px solid grey;
+	border-radius:4px;
+	padding:1px;
+	width:99%;
+}
+
 .option {
 	font-size:20pt;
+	text-align:center;
+	display:block;
 }
 
 .Biology {

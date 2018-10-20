@@ -1,0 +1,104 @@
+<html>
+<!-- This page will only be displayed if user is logged in -->
+<head>
+<title>Chemistry Revision | GCSE Revision</title>
+<link rel="stylesheet" href="quiz.css">
+</head>
+
+<body onload="load()">
+<sitetitle>GSCE Revision</sitetitle>
+<p></p>
+<hr>
+<div class="light-grey">
+<p>Go Back to <a href="user.html" class="hidden blue-link">Home</a> »<a href="science.html" class="hidden blue-link">Science</a></p>
+<p><div class="chemistry option subjecthead">Chemistry</div></p>
+
+<div id="q1">
+<div class="question">
+Question 1?
+<table style="width:100%">
+<tr>
+<td><div class="answer">Answer 1</div></td>
+<td><div class="answer">Answer 2</div></td>
+</tr>
+<tr>
+<td><div class="answer">Answer 3</div></td>
+<td><div class="answer">Answer 3</div></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id="q2">
+<div class="question">
+Question 2?
+<table style="width:100%">
+<tr>
+<td><div class="answer">Answer 1</div></td>
+<td><div class="answer">Answer 2</div></td>
+</tr>
+<tr>
+<td><div class="answer">Answer 3</div></td>
+<td><div class="answer">Answer 3</div></td>
+</tr>
+</table>
+</div>
+</div>
+
+<div id="q3">
+<div class="question">
+Question 3?
+<table style="width:100%">
+<tr>
+<td><div class="answer">Answer 1</div></td>
+<td><div class="answer">Answer 2</div></td>
+</tr>
+<tr>
+<td><div class="answer">Answer 3</div></td>
+<td><div class="answer">Answer 3</div></td>
+</tr>
+</table>
+</div>
+
+</div>
+</div>
+
+<object 
+  classid="clsid:CAFEEFAC-0015-0000-0000-ABCDEFFEDCBA"
+  style="height: 500px; width: 700px;">
+  <param name="code" value="FinalProject.class">
+    <comment>
+      <embed code="FinalProject.class"
+        type="application/x-java-applet"
+        height="500" width="700">
+        <noembed>
+          This browser appears to lack support for Java Applets.
+        </noembed>
+      </embed>
+    </comment>
+  </object>
+</body>
+<script>
+
+function load(){
+randomNumber = Math.floor(Math.random() * 3) + 1   //numbers 1 - 3
+     if (randomNumber == 1) {
+          document.getElementById("q1").style.display = "inline";
+          document.getElementById("q2").style.display = "none";
+          document.getElementById("q3").style.display = "none";
+     }
+     if (randomNumber == 2) {
+          document.getElementById("q1").style.display = "none";
+          document.getElementById("q2").style.display = "inline";
+          document.getElementById("q3").style.display = "none";
+     }
+     if (randomNumber == 3) {
+          document.getElementById("q1").style.display = "none";
+          document.getElementById("q2").style.display = "none";
+          document.getElementById("q3").style.display = "inline";
+
+     }
+     
+}
+</script>
+</html>
